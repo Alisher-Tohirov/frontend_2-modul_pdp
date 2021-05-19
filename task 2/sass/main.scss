@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-sizing: border-box;
+    position: relative;
+    .wrapper {
+        width: 1005px;
+        height: 100vh;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background-color: #ffffff;
+        background: {
+            image: url("../img/Rectangle\ 6.5.png");
+            repeat: no-repeat;
+            size: 160px 290px;
+            position: -50px -10px;
+        }
+        .fon {
+            position: absolute;
+            right: 0;
+            bottom: -330px;
+        }
+        // .rasm1 {
+        //     position: absolute;
+        //     top: 0px;
+        //     left: 0px;
+        // }
+        // .rasm2 {
+        //     transform: rotateX(45deg);
+        //     padding-bottom: 50px;
+        //     position: absolute;
+        //     bottom: -100px;
+        //     right: -100px;
+        // }
+        h1 {
+            text-align: center;
+            padding-top: 122px;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-bottom: 60px;
+        }
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .box {
+                width: 245px;
+                height: 235px;
+                margin: 0 9px;
+                position: relative;
+                .rasm {
+                    width: 145px;
+                    height: 107px;
+                    z-index: 1;
+                    position: absolute;
+                    top: 0;
+                    left: 50px;
+                    position: relative;
+                    .belgi {
+                        width: 145px;
+                        height: 145px;
+                        border: 8px solid #ffffff;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -4px;
+                        left: -4px;
+                    }
+                }
+                .content {
+                    width: 245px;
+                    height: 200px;
+                    background-color: rgb(255, 253, 246);
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                    position: absolute;
+                    bottom: -60px;
+                    left: 0;
+                    h3 {
+                        text-align: center;
+                        padding-top: 60px;
+                    }
+                    p {
+                        font-size: 14px;
+                        text-align: center;
+                        color: #eb9a67;
+                    }
+                }
+            }
+        }
+    }
+}
