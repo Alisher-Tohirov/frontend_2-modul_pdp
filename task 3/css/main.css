@@ -1,211 +1,184 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f5; }
+  body .wrapper {
+    width: 1100px;
+    height: 100vh;
+    margin: 0 auto; }
+    body .wrapper .menu {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      body .wrapper .menu h1 {
+        width: 70%;
+        margin-top: 50px; }
+      body .wrapper .menu .btn {
+        width: 10%;
+        height: 5vh;
+        border: 1px solid #555555;
+        font-size: 14px;
+        font-family: sans-serif;
+        padding: 0 2rem;
+        margin-top: 50px; }
+      body .wrapper .menu .btn:hover {
+        color: #60f10c;
+        background-color: #ffffff; }
+    body .wrapper .block {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      body .wrapper .block .box_1 {
+        width: 42%;
+        height: 72vh;
+        background-color: #ffffff;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
+        position: relative; }
+        body .wrapper .block .box_1 .icon {
+          width: 90px;
+          height: 25px;
+          border-radius: 5px;
+          position: absolute !important;
+          top: 10px;
+          right: 10px;
+          opacity: 0.7;
+          text-align: right;
+          border: 1px solid red;
+          background-color: red;
+          color: #ffffff;
+          padding-top: 5px;
+          padding-right: 5px;
+          position: relative; }
+          body .wrapper .block .box_1 .icon .radius {
+            width: 12px;
+            height: 12px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 8px;
+            left: 10px; }
+        body .wrapper .block .box_1 .rasm1 {
+          width: 100%;
+          height: 50vh; }
+        body .wrapper .block .box_1 .rasm2 {
+          width: 100px;
+          position: absolute;
+          top: 28%;
+          left: 40%; }
+        body .wrapper .block .box_1 h1 {
+          font-size: 22px;
+          padding: 0 1rem;
+          color: #333333; }
+        body .wrapper .block .box_1 h2 {
+          font-size: 20px;
+          padding: 0 1.75rem;
+          color: #555555; }
+        body .wrapper .block .box_1 p {
+          color: #444444;
+          width: 250px;
+          padding: 0 1.75rem; }
+        body .wrapper .block .box_1 .rasm3,
+        body .wrapper .block .box_1 .rasm4 {
+          width: 30px;
+          border-radius: 5px;
+          position: absolute;
+          margin: 0 2rem 1rem 0;
+          bottom: 0;
+          right: 60px;
+          color: black;
+          background-color: #777777; }
+        body .wrapper .block .box_1 .rasm4 {
+          padding: 0 0.2rem;
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+      body .wrapper .block .box_2 {
+        width: 55%;
+        height: 72vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        body .wrapper .block .box_2 .box1,
+        body .wrapper .block .box_2 .box3 {
+          margin-left: 30px; }
+        body .wrapper .block .box_2 .box1,
+        body .wrapper .block .box_2 .box2 {
+          margin-bottom: 15px; }
+        body .wrapper .block .box_2 .box1,
+        body .wrapper .block .box_2 .box2,
+        body .wrapper .block .box_2 .box3,
+        body .wrapper .block .box_2 .box4 {
+          width: 45%;
+          position: relative;
+          background-color: #ffffff;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08); }
+          body .wrapper .block .box_2 .box1 .rasm1,
+          body .wrapper .block .box_2 .box2 .rasm1,
+          body .wrapper .block .box_2 .box3 .rasm1,
+          body .wrapper .block .box_2 .box4 .rasm1 {
+            width: 100%;
+            height: 20vh; }
+          body .wrapper .block .box_2 .box1 .rasm2,
+          body .wrapper .block .box_2 .box2 .rasm2,
+          body .wrapper .block .box_2 .box3 .rasm2,
+          body .wrapper .block .box_2 .box4 .rasm2 {
+            width: 60px;
+            position: absolute;
+            top: 10%;
+            left: 40%; }
+          body .wrapper .block .box_2 .box1 h2,
+          body .wrapper .block .box_2 .box2 h2,
+          body .wrapper .block .box_2 .box3 h2,
+          body .wrapper .block .box_2 .box4 h2 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-left: 1rem; }
+          body .wrapper .block .box_2 .box1 .rasm5,
+          body .wrapper .block .box_2 .box2 .rasm5,
+          body .wrapper .block .box_2 .box3 .rasm5,
+          body .wrapper .block .box_2 .box4 .rasm5 {
+            margin-left: 1rem;
+            margin-right: 5px;
+            margin-bottom: -1px; }
+          body .wrapper .block .box_2 .box1 .rasm6,
+          body .wrapper .block .box_2 .box2 .rasm6,
+          body .wrapper .block .box_2 .box3 .rasm6,
+          body .wrapper .block .box_2 .box4 .rasm6 {
+            margin-left: 1.75rem;
+            margin-right: 5px;
+            margin-bottom: -3px; }
+          body .wrapper .block .box_2 .box1 .rasm7,
+          body .wrapper .block .box_2 .box2 .rasm7,
+          body .wrapper .block .box_2 .box3 .rasm7,
+          body .wrapper .block .box_2 .box4 .rasm7 {
+            margin-left: 5rem;
+            margin-right: 5px;
+            margin-bottom: -3px; }
+        body .wrapper .block .box_2 .box1 {
+          overflow: hidden; }
+          body .wrapper .block .box_2 .box1 .icon2 {
+            width: 80px;
+            height: 25px;
+            border-radius: 5px;
+            position: absolute !important;
+            top: -5px;
+            right: -1px;
+            opacity: 0.7;
+            text-align: right;
+            border: 1px solid red;
+            background-color: red;
+            color: #ffffff;
+            padding-top: 5px;
+            padding-right: 5px;
+            position: relative; }
+            body .wrapper .block .box_2 .box1 .icon2 .radius2 {
+              position: absolute;
+              top: 8px;
+              left: 12px; }
+              body .wrapper .block .box_2 .box1 .icon2 .radius2 img {
+                position: absolute;
+                top: -5px;
+                left: 0; }
 
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.block {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    overflow: hidden;
-}
-
-.box {
-    width: 25%;
-    height: 220px;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-}
-
-.iteam {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 115px;
-    right: -10px;
-    background-color: red;
-    z-index: 1;
-    transform: rotate(45deg);
-}
-
-.radius {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 1rem auto;
-    transition: all 0.1s linear;
-}
-
-.radius img {
-    width: 100%;
-}
-
-.box:hover .radius {
-    transform: scale(1.5);
-}
-
-.wrapper>.block .box:nth-child(1) {
-    background-color: rgb(175, 122, 196);
-}
-
-.wrapper>.block .box:nth-child(1):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(1) .iteam {
-    background-color: rgb(175, 122, 196);
-}
-
-.wrapper>.block .box:nth-child(1):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(2) {
-    background-color: rgb(93, 173, 226);
-}
-
-.wrapper>.block .box:nth-child(2):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(2) .iteam {
-    background-color: rgb(93, 173, 226);
-}
-
-.wrapper>.block .box:nth-child(2):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(3) {
-    background-color: rgb(72, 201, 176);
-}
-
-.wrapper>.block .box:nth-child(3):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(3) .iteam {
-    background-color: rgb(72, 201, 176);
-}
-
-.wrapper>.block .box:nth-child(3):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(4) {
-    background-color: rgb(82, 190, 128);
-}
-
-.wrapper>.block .box:nth-child(4):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(4) .iteam {
-    background-color: rgb(82, 190, 128);
-}
-
-.wrapper>.block .box:nth-child(4):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(5) {
-    background-color: rgb(236, 200, 55);
-}
-
-.wrapper>.block .box:nth-child(5):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(5) .iteam {
-    background-color: rgb(236, 200, 55);
-}
-
-.wrapper>.block .box:nth-child(5):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(6) {
-    background-color: rgb(235, 151, 78);
-}
-
-.wrapper>.block .box:nth-child(6):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(6) .iteam {
-    background-color: rgb(235, 151, 78);
-}
-
-.wrapper>.block .box:nth-child(6):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(7) {
-    background-color: rgb(240, 98, 146);
-}
-
-.wrapper>.block .box:nth-child(7):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(7) .iteam {
-    background-color: rgb(240, 98, 146);
-}
-
-.wrapper>.block .box:nth-child(7):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(8) {
-    background-color: rgb(77, 182, 172);
-}
-
-.wrapper>.block .box:nth-child(8):hover {
-    background-color: rgb(11, 108, 169);
-}
-
-.wrapper>.block .box:nth-child(8) .iteam {
-    background-color: rgb(77, 182, 172);
-}
-
-.wrapper>.block .box:nth-child(8):hover .iteam {
-    background-color: rgb(11, 108, 169);
-}
-
-@media (min-width:990px) and (max-width:1200px) {
-    .wrapper {
-        width: 98%;
-    }
-}
-
-@media (min-width:776px) and (max-width:989.9px) {
-    .wrapper {
-        width: 98%;
-    }
-}
-
-@media (min-width:446px) and (max-width:775.9px) {
-    .wrapper {
-        width: 98%;
-    }
-    .box {
-        width: 50%;
-    }
-}
-
-@media (min-width:0) and (max-width:445.9px) {
-    .wrapper {
-        width: 98%;
-    }
-    .box {
-        width: 100%;
-    }
-}
+/*# sourceMappingURL=main.css.map */
