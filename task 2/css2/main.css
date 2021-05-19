@@ -1,0 +1,75 @@
+h1 {
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
+
+.box-1 {
+  height: 280px;
+  background-image: url("../img/1.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.rasm-1 {
+  background-image: url("../img/1.png"); }
+
+.rasm-2 {
+  background-image: url("../img/2.png"); }
+
+.rasm-3 {
+  background-image: url("../img/3.png"); }
+
+.rasm-4 {
+  background-image: url("../img/4.png"); }
+
+.rasm-5 {
+  background-image: url("../img/5.png"); }
+
+.rasm-6 {
+  background-image: url("../img/6.png"); }
+
+.rasm-7 {
+  background-image: url("../img/7.png"); }
+
+.rasm-8 {
+  background-image: url("../img/8.png"); }
+
+.rasm-9 {
+  background-image: url("../img/9.png"); }
+
+.rasm-10 {
+  background-image: url("../img/10.png"); }
+
+.rasm-11 {
+  background-image: url("../img/11.png"); }
+
+.rasm-12 {
+  background-image: url("../img/12.png"); }
+
+.col-3 {
+  margin-top: 1rem; }
+
+.box-2 {
+  padding: 3rem 0;
+  opacity: 0; }
+
+.box-2:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .box-2:hover .box {
+    width: 260px;
+    height: 185px;
+    padding: 70px 0 70px 40px; }
+    .box-2:hover .box p {
+      color: #fff;
+      padding-bottom: 1rem;
+      font-family: sans-serif;
+      font-size: 18px; }
+    .box-2:hover .box button {
+      padding-bottom: 3rem;
+      border: none;
+      border-radius: 20px;
+      padding: 0.5rem 1.2rem;
+      background-color: #ec681f;
+      outline: none;
+      color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
